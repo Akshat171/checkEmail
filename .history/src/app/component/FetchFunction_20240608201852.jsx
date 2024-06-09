@@ -38,3 +38,19 @@ async function fetchEmails(accessToken, refreshToken) {
 }
 
 export default fetchEmails;
+
+// const fetchEmails = async (accessToken) => {
+//   try {
+//     const response = await fetch(`/api/fetchemails?accessToken=${accessToken}`);
+//     if (!response.ok) {
+//       throw new Error("Failed to fetch emails");
+//     }
+//     const emails = await response.json();
+//     return emails;
+//   } catch (error) {
+//     console.error("Error fetching emails: ", error);
+//     throw error;
+//   }
+// };
+
+// export default fetchEmails;
